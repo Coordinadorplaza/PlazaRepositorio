@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Planilla obsequio de estacionamiento a clientes</title>
+</head>|
+<!-------------------------------------------------HEADER------------------------------------------------------------------------------>
+<header>
+    <link rel="stylesheet" href="header.css">
+    <div class="headermercadeo">
+      <img src="Plaza-de-las-Americas-centro-comercial.webp" alt="Imagen de encabezado"> <b> Planilla obsequio de estacionamiento a clientes
+      </b>    <nav>
+        <ul>
+          <li><a href="http://127.0.0.1:5500/MenuMercadeo/index.html">Menu</a></li>
+          <li><a href="https://app.linkaform.com/#/records/117320/">Ver registros LinkaForm</a></li>
+        </ul>
+      </nav>
+    </div>
+</header>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+<body>
+<!--------------------------------------------------FECHA------------------------------------------------------------------------------>
+<div class="container mt-5">
+    <div class="mb-3">
+      <label class="form-label">Fecha</label>
+      <input type="date" class="form-control" id="inputDate" onchange="getData('date');return false;">
+    </div>
+    <br>
+    <!------------------------------------------Numero de celular------------------------------------------------------------------------->
+<div class="mb-3">
+    <label class="form-label" for="inputcantidad">Cantidad</label>
+    <input type="number" class="form-control" id="inputcantidad" onkeyup="getData('cantidad');return false;">
+  </div>

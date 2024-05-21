@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Acta premio</title>
+</head>|
+<!-------------------------------------------------HEADER------------------------------------------------------------------------------>
+<header>
+    <link rel="stylesheet" href="header.css">
+    <div class="headermercadeo">
+      <img src="Plaza-de-las-Americas-centro-comercial.webp" alt="Imagen de encabezado"> <b> ACTA PREMIO
+      </b><nav>
+        <ul>
+          <li><a href="http://127.0.0.1:5500/MenuMercadeo/index.html">Menu</a></li>
+          <li><a href="https://app.linkaform.com/#/records/117320/">Ver registros LinkaForm</a></li>
+        </ul>
+      </nav>
+    </div>
+</header>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+<body>
+<!--------------------------------------------------FECHA------------------------------------------------------------------------------>
+<div class="container mt-5">
+    <div class="mb-3">
+      <label class="form-label">Fecha</label>
+      <input type="date" class="form-control" id="inputDate" onchange="getData('date');return false;">
+    </div>
+    <br>
+<!------------------------------------------------DESCRIPCCION-------------------------------------------------------------------------->
+<div class="mb-3">
+    <label class="form-label" for="inputdescripccion">Descripccion de la actividad</label>
+    <input type="text" class="form-control" id="inputdescripccion" onkeyup="getData('descripccion');return false;">
+  </div>
+  <br>Descripccion de la actividad<br><br>
+    Por medio de la presente, certifico que he recibido por parte del Centro Comercial Plaza de Las Américas P.H., los premios relacionados en la parte inferior de este documento.
+    De igual forma acepto que el Centro Comercial Plaza de Las Américas P.H., puede utilizar las fotografías tomadas en el momento de la entrega del premio para ser publicadas en los diferentes medios de comunicación que el Centro Comercial Plaza de Las Américas P.H. considere pertinentes, sin solicitar permiso o generar pagos adicionales.
+    Cordialmente
+<br>
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<!-------------------------------------------------NOMBRE----------------------------------------------------------------------------->
+<br><br>
+<div class="mb-3">
+    <label class="form-label" for="inputnombre">Nombre</label>
+    <input type="text" class="form-control" id="inputnombre" onkeyup="getData('nombre');return false;">
+  </div>
+<!------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------Numero documento identificacion------------------------------------------------------------>
+<div class="mb-3">
+    <label class="form-label" for="inputidentificacion">Numero documento identificacion</label>
+    <input type="number" class="form-control" id="inputidentificacion" onkeyup="getData('identificacion');return false;">
+  </div>
+<!------------------------------------------Numero de celular------------------------------------------------------------------------->
+<div class="mb-3">
+    <label class="form-label" for="inputcelular">Numero de celular</label>
+    <input type="number" class="form-control" id="inputcelular" onkeyup="getData('celular');return false;">
+  </div>
+<!-------------------------------------------------Direccion------------------------------------------------------------------------->
+<div class="mb-3">
+    <label class="form-label" for="inputdireccion">Direccion</label>
+    <input type="text" class="form-control" id="inputdireccion" onkeyup="getData('direccion');return false;">
+  </div>
+<!--------------------------------------------------Correo--------------------------------------------------------------------------->
+<div class="mb-3">
+    <label class="form-label" for="inputcorreo">Correo</label>
+    <input type="email" class="form-control" id="inputcorreo" onkeyup="getData('correo');return false;">
+  </div>
+<!-----------------------------------------------Condiciones--------------------------------------------------------------------------->
+Condiciones<br>
+Estoy enterado y acepto las condiciones informadas y explicadas por el conductor y/o presentador del concurso, las cuales estan 
+incluidas en el reglamento y condiciones establecidas por el Centro Comercial para la realización del concurso <br><br>
+<!------------------------------------------Cantidad de premios------------------------------------------------------------------------>
+<div class="mb-3">
+    <label class="form-label" for="inputpremios">Cantidad de premios</label>
+    <input type="number" class="form-control" id="inputpremios" onkeyup="getData('premios');return false;">
+  </div>
+<!-----------------------------------------------Valor--------------------------------------------------------------------------------->
+<div class="mb-3">
+    <label class="form-label" for="inputvalor">Valor</label>
+    <input type="number" class="form-control" id="inputvalor" onkeyup="getData('valor');return false;">
+  </div>
+<!-----------------------------------------------Marca--------------------------------------------------------------------------------->
+<div class="mb-3">
+    <label class="form-label" for="inputmarca">Marca</label>
+    <input type="text" class="form-control" id="inputmarca" onkeyup="getData('marca');return false;">
+  </div>
+<!--------------------------------------Multiple respuesta personal mercadeo----------------------------------------------------------->
+  <div class="mb-3">
+    <label class="form-label">Persona que entrega</label>
+    <div class="form-check">
+      <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+        value="FIDEL PAEZ">
+      <label class="form-check-label" for="inlineRadio1"> FIDEL PAEZ </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+        value="MAURICIO FLOREZ">
+      <label class="form-check-label" for="inlineRadio2">MAURICIO FLOREZ</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+        value="MIGUEL AMARIS">
+      <label class="form-check-label" for="inlineRadio3">MIGUEL AMARIS</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+        value="LIZ SOLORZANO">
+      <label class="form-check-label" for="inlineRadio3">LIZ SOLORZANO</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+        value="ALEXANDRA ARCHILA">
+      <label class="form-check-label" for="inlineRadio3">ALEXANDRA ARCHILA</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+        value="SARA GARCIA">    
+      <label class="form-check-label" for="inlineRadio3">SARA GARCIA</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+        value="MICHAEL AYALA">
+      <label class="form-check-label" for="inlineRadio3">MICHAEL AYALA</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+        value="YEIMMY GOMEZ">
+      <label class="form-check-label" for="inlineRadio3">YEIMMY GOMEZ</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+        value="YULIETH SANDOVAL">
+      <label class="form-check-label" for="inlineRadio3">YULIETH SANDOVAL</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+        value="LAURA CERON">
+      <label class="form-check-label" for="inlineRadio3">LAURA CERON</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+        value="DANIELA CALDERON">
+      <label class="form-check-label" for="inlineRadio3">DANIELA CALDERON</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+        value="JENIFER GARCIA">
+      <label class="form-check-label" for="inlineRadio3">JENIFER GARCIA</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+        value="SANTIAGO BOCANEGRA">
+      <label class="form-check-label" for="inlineRadio3">SANTIAGO BOCANEGRA</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+        value="LAURA GOMEZ">
+      <label class="form-check-label" for="inlineRadio3">LAURA GOMEZ</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+        value="SANDRA BOHORQUEZ">
+      <label class="form-check-label" for="inlineRadio3">SANDRA BOHORQUEZ</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+        value="Otro">
+      <label class="form-check-label" for="inlineRadio4v">Otros</label>
+    </div>
+    <div class="mb-3" style="display:none;" id="divInputOther">
+      <label class="form-label">Otra persona</label>
+      <input type="text" class="form-control" id="inputOtro" onkeyup="getData('otro');return false;">
+    </div>
+  </div>
+<!---------------------------------------------------Canvas firma--------------------------------------------------------------------->
+</div>
+</div>
+
+  <div id="container">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <canvas id="canvas" width="1518" height="900"></canvas>
+    <div class="container mt-5">
+    <br><br><button class="btn btn-danger" id="btnLimpiar" >BORRAR</button>
+   <button class="btn btn-info" id="btnguardar">GUARDAR FIRMA</button>
+    <!-- Botón "Pasar a documento" eliminado -->
+    <br>
+    <script src="script.js"></script>
+    <script>
+      if (window.opener) {
+        document.querySelector("#firma").src = window.opener.obtenerImagen();
+        // Imprimir documento. Si no quieres imprimir, remueve la siguiente línea
+        window.print();
+      }
+    </script>
+<!---------------------------------------------------------Firma------------------------------------------------------------------------>
+    <div class="row">
+        <div class="col-auto">
+          <label for="formFile" class="form-label">Seleccionar firma</label>
+          <input class="form-control" type="file" id="inputFile">
+        </div>
+        <br>
+        <div class="col-auto">
+          <button type="button" class="btn btn-warning mt-4" onclick="setImg();return false;" id="buttonSaveImg">Confirmar guardar firma</button>
+        </div>
+      </div>
+      <button type="button" class="btn btn-success mt-4" onclick="setDataRecord();return false;">Enviar Registro</button>
+    </div>
+    <br>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
