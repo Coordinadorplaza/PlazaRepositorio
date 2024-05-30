@@ -10,6 +10,10 @@ const obtenerXReal = (clientX) => clientX - $canvas.getBoundingClientRect().left
 const obtenerYReal = (clientY) => clientY - $canvas.getBoundingClientRect().top;
 let haComenzadoDibujo = false; // Bandera que indica si el usuario está presionando el botón del mouse sin soltarlo
 
+// Establecer el tamaño del canvas para que ocupe el 100% del ancho disponible
+$canvas.width = window.innerWidth;
+$canvas.height = window.innerHeight;
+
 const guardarfirma = () => {
     let canvas = document.getElementById('canvas');
     canvas.toBlob((blob) => {

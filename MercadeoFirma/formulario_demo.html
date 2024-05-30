@@ -37,6 +37,7 @@
       <label class="form-label">Fecha</label>
       <input type="date" class="form-control" id="inputDate" onchange="getData('date');return false;">
     </div>
+    
     <br>
     <!--Multiple respuesta personal mercadeo-->
     <div class="mb-3">
@@ -111,13 +112,12 @@
           value="LAURA GOMEZ">
         <label class="form-check-label" for="inlineRadio3">LAURA GOMEZ</label>
       </div>
-      <div class="form-check">
+      <div class="form-check"> 
         <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio3"
           value="SANDRA BOHORQUEZ">
         <label class="form-check-label" for="inlineRadio3">SANDRA BOHORQUEZ</label>
       </div>
-      <br>
-      <!--<div class="form-check">
+      <div class="form-check">
         <input class="form-check-input input-user-delivery" type="radio" name="inlineRadioOptions" id="inlineRadio4"
           value="Otro">
         <label class="form-check-label" for="inlineRadio4v">Otros</label>
@@ -126,24 +126,23 @@
         <label class="form-label">Otra persona</label>
         <input type="text" class="form-control" id="inputOtro" onkeyup="getData('otro');return false;">
       </div>
-    </div> -->
+    </div>
 <!-------------------------------------------------------------------------------------------------------------------------------------------->
 <!---Multiple respuesta de que se presta.-->    
 <div class="mb-3">
-  <label class="form-label">Prestamo de:</label>
-  <div class="form-checknew">
-    <input class="form-checknew-input input-checknew" type="radio" name="radioline" id="radioline1"
-      value="Silla de ruedas">
-    <label class="form-check-label" for="radioline1"> SILLA RUEDAS</label>
-  </div>
+      <label class="form-label">Prestamo de:</label>
+      <div class="form-checknew">
+        <input class="form-checknew-input input-checknew" type="radio" name="radioline" id="radioline1"
+          value="silla ruedas">
+        <label class="form-check-label" for="radioline1"> SILLA RUEDAS</label>
+      </div>
 
-  <div class="form-checknew">
-    <input class="form-checknew-input input-checknew" type="radio" name="radioline" id="radioline2"
-      value="Coche para perros">
-    <label class="form-check-label" for="radioline2">COCHE PERRO</label>
-  </div>
-<br>
- 
+      <div class="form-checknew">
+        <input class="form-checknew-input input-checknew" type="radio" name="radioline" id="radioline1"
+          value="coche perro">
+        <label class="form-check-label" for="radioline1">COCHE PERRO</label>
+      </div>
+<!------------------------->
 <br>
 <!------Info usuarios-->
 <div class="mb-3">
@@ -167,34 +166,27 @@
   <input type="text" class="form-control" id="inputSilla" onkeyup="getData('silla');return false;" >
 </div>
 
-<!-------------------------------------------------Estado fisico de la entrega a tener en cuenta----------------------------------->
-<div class="mb-3">
-  <label class="form-label" for="inputaspecto">Aspecto fisico</label>
-  <input type="text" class="form-control" id="inputaspecto" onkeyup="getData('aspecto');return false;" >
-</div>
-
-
 <!----------Canvas firma-->
 </div>
 </div>
 
-  <div id="container">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <canvas id="canvas" width="1512" height="900"></canvas>
-    <div class="container mt-5">
-    <br><br><button class="btn btn-danger" id="btnLimpiar" >BORRAR</button>
-   <button class="btn btn-info" id="btnguardar">GUARDAR FIRMA</button>
-    <!-- Botón "Pasar a documento" eliminado -->
-    <br>
-    <script src="script.js"></script>
-    <script>
-      if (window.opener) {
-        document.querySelector("#firma").src = window.opener.obtenerImagen();
-        // Imprimir documento. Si no quieres imprimir, remueve la siguiente línea
-        window.print();
-      }
-    </script>
-
+<div id="container">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <canvas id="canvas"></canvas>
+  <div class="container mt-5">
+      <br><br><button class="btn btn-danger" id="btnLimpiar">BORRAR</button>
+      <button class="btn btn-info" id="btnguardar">GUARDAR FIRMA</button>
+      <!-- Botón "Pasar a documento" eliminado -->
+      <br>
+      <script src="script.js"></script>
+      <script>
+          if (window.opener) {
+              document.querySelector("#firma").src = window.opener.obtenerImagen();
+              // Imprimir documento. Si no quieres imprimir, remueve la siguiente línea
+              window.print();
+          }
+      </script>
+ 
 <!----------------->
       <br>
       
